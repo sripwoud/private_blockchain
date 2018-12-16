@@ -13,3 +13,6 @@ In order to be able to persist my blochchain I used LevelDB.
 - [Node.js](https://nodejs.org/en/)
 - [crypto-js](https://www.npmjs.com/package/crypto-js): for SHA256 cryptographic
 function
+- Understanding usage of async/await instead of regular promises:
+  - https://ponyfoo.com/articles/understanding-javascript-async-await
+  - https://www.twilio.com/blog/2015/10/asyncawait-the-hero-javascript-deserved.html
