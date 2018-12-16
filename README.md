@@ -9,6 +9,7 @@ In order to be able to persist my blochchain I used LevelDB.
 3. Test the functionalities: `node simpleChain.js`
 
 ## Resources
+- [Starter code](https://github.com/udacity/nd1309-work-code/tree/master/Course_Blockchain_Data/Project_2_es6_starter_code)
 - [LevelDB](http://leveldb.org/): to persist the data
 - [Node.js](https://nodejs.org/en/)
 - [crypto-js](https://www.npmjs.com/package/crypto-js): for SHA256 cryptographic
