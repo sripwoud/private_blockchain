@@ -40,10 +40,12 @@ class BlockController {
       method: 'POST',
       path: '/api/block',
       handler: (request, h) => {
-        let newBlock = new BlockClass.Block(request.payload.data)
-        newBlock.height = this.blocks.length
-        newBlock.hash = SHA256(JSON.stringify(newBlock)).toString()
-        this.blocks.push(newBlock)
+        // let newBlock = new BlockClass.Block(request.payload.data)
+        // newBlock.height = this.blocks.length
+        // newBlock.hash = SHA256(JSON.stringify(newBlock)).toString()
+        // this.blocks.push(newBlock)
+        const newBlock = new BlockClass.Block(request.payload.data)
+        blockchain.addBlock(new BlockClass.Block(request.payload.data))
         return 'Block added \n' + JSON.stringify(newBlock)
       }
     })
