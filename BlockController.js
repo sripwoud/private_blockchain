@@ -35,9 +35,14 @@ class BlockController {
       method: 'POST',
       path: '/api/block',
       handler: (request, h) => {
-        const newBlock = new BlockClass.Block(request.payload.data)
-        blockchain.addBlock(new BlockClass.Block(request.payload.data))
-        return 'Block added \n' + JSON.stringify(newBlock)
+        // Check if content in the block
+        if (request.payload.data) {
+          const newBlock = new BlockClass.Block(request.payload.data)
+          blockchain.addBlock(new BlockClass.Block(request.payload.data))
+          return 'Block added \n' + JSON.stringify(newBlock)
+        } else {
+          return "Block to add doesn't have any content so wasn't added!"
+        }
       }
     })
   }
