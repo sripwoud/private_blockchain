@@ -9,10 +9,12 @@ Finally I implemented GET and POST API endpoints using the hapijs framework.
 2. Install project dependencies: `npm install`
 3. Start the web service: `node app.js`
 
-## API endpoints
+## API endpoints  
 The server runs locally by default on port 8000.  
-You may select a different one by updating the `PORT` parameter of the **BlockAPI** constructor in [app.js](app.js).
--
+You may select a different one by updating the `PORT` parameter of the **BlockAPI** constructor in [app.js](app.js).  
+- **/api/block/height**: to retrieve a block by its height/index.
+- **/api/block**: to add a new block ("data=block's content")
+
 
 ## Resources
 - [Starter code](https://github.com/udacity/nd1309-work-code/tree/master/Course_Blockchain_Data/Project_2_es6_starter_code)
